@@ -1,0 +1,64 @@
+body {
+	font-size: 18px;
+}
+
+.App {
+	display: flex;
+	flex-wrap: wrap;
+}
+button {
+	padding: 8px 15px;
+	border-radius: 0;
+	border: 0;
+	cursor: pointer;
+}
+
+.workspaces {
+	margin-top: 25px;
+	width: 300px;
+	&__controls {
+		margin-left: 25px;
+		button:last-child {
+			margin-left: 15px;
+		}
+	}
+	&__block {
+		min-height: 25px;
+		border: 1px solid black;
+		padding: 15px 25px;
+		margin: 15px 25px;
+		cursor: pointer;
+		transition: .4s;
+		&.active {
+			background-color: rgb(209, 209, 209);
+		}
+	}
+}
+.links {
+	margin-top: 25px;
+	&__controls {
+		margin-bottom: 15px;
+	}
+	&__area {
+		input {
+			display: block;
+			width: 800px;
+			max-width: 100%;
+			border: none;
+			border-radius: 3px;
+			background-color: #ccc;
+			padding: 15px 25px;
+			font-size: 1.4rem;
+		}
+		textarea {
+			margin-top: 25px;
+			width: 800px;
+			max-width: 100%;
+			background-color: #ccc ;
+			border-radius: 3px;
+			border: none;
+			padding: 15px 25px;
+			font-size: 1.2rem;
+		}
+	}
+}
